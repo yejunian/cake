@@ -1,7 +1,9 @@
+import Cake from './components/Cake/Cake';
+
 function App() {
   return (
     <>
-      Hello, world!
+      <Cake />
     </>
   );
 }
