@@ -5,6 +5,6 @@ export const candle = style({
   flexDirection: 'column',
   justifyContent: 'end',
   alignItems: 'center',
-  width: '24px',
-  height: '25vh',
+
+  width: '7.5%',
 });

@@ -1,5 +1,7 @@
 import clsx from 'clsx';
 
+import flameSvg from '@/assets/twemoji/modified/flame.svg';
+
 import { blowOut, candleFlame } from './CandleFlame.css';
 
 interface IProps {
@@ -7,7 +9,13 @@ interface IProps {
 }
 
 function CandleFlame({ isLit }: IProps) {
-  return <div className={clsx(candleFlame, !isLit && blowOut)}>🔥</div>;
+  return (
+    <img
+      className={clsx(candleFlame, !isLit && blowOut)}
+      src={flameSvg}
+      alt="Candle flame"
+    />
+  );
 }
 
 export default CandleFlame;

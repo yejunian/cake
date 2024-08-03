@@ -1,7 +1,9 @@
+import cakeBodySvg from '@/assets/twemoji/modified/cake-body.svg';
+
 import { cakeBody } from './CakeBody.css';
 
 function CakeBody() {
-  return <div className={cakeBody} />;
+  return <img className={cakeBody} src={cakeBodySvg} alt="Cake body" />;
 }
 
 export default CakeBody;
