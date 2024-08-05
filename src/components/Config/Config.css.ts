@@ -15,6 +15,10 @@ export const container = style({
   padding: '16px',
 });
 
+export const closed = style({
+  justifyContent: 'end',
+});
+
 export const left = style({
   display: 'flex',
   flex: '1 1',
@@ -45,9 +49,27 @@ export const numberInput = style({
   borderRadius: '8px',
   padding: '0 8px',
   width: '64px',
-  backgroundColor: '#303030',
+  backgroundColor: '#282828',
 
   color: 'white',
   fontSize: '16px',
   fontWeight: 'bold',
+});
+
+export const toggle = style({
+  flex: '0 0 48px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+
+  margin: 0,
+  border: '1px solid #606060',
+  borderRadius: '8px',
+  padding: 0,
+  width: '48px',
+  height: '48px',
+  backgroundColor: 'transparent',
+
+  color: '#d0d0d0',
+  fontSize: '24px',
 });
