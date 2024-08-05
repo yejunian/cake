@@ -1,16 +1,16 @@
+import { useCandleStore } from '@/stores/candle.store';
+
 import Candle from './Candle/Candle';
 import { candles } from './CandleContainer.css';
 
-interface IProps {
-  isCandleLit: boolean;
-}
+function CandleContainer() {
+  const { candleNumber } = useCandleStore();
 
-function CandleContainer({ isCandleLit }: IProps) {
   return (
     <div className={candles}>
-      <Candle isLit={isCandleLit} />
-      <Candle isLit={isCandleLit} />
-      <Candle isLit={isCandleLit} />
+      {Array.from({ length: candleNumber }, (_, index) => (
+        <Candle key={index} />
+      ))}
     </div>
   );
 }
