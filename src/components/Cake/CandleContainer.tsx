@@ -1,16 +1,12 @@
 import Candle from './Candle/Candle';
 import { candles } from './CandleContainer.css';
 
-interface IProps {
-  isCandleLit: boolean;
-}
-
-function CandleContainer({ isCandleLit }: IProps) {
+function CandleContainer() {
   return (
     <div className={candles}>
-      <Candle isLit={isCandleLit} />
-      <Candle isLit={isCandleLit} />
-      <Candle isLit={isCandleLit} />
+      <Candle />
+      <Candle />
+      <Candle />
     </div>
   );
 }

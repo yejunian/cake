@@ -1,14 +1,13 @@
 import clsx from 'clsx';
 
 import flameSvg from '@/assets/twemoji/modified/flame.svg';
+import { useCandleStore } from '@/stores/candle.store';
 
 import { blowOut, candleFlame } from './CandleFlame.css';
 
-interface IProps {
-  isLit: boolean;
-}
+function CandleFlame() {
+  const { isLit } = useCandleStore();
 
-function CandleFlame({ isLit }: IProps) {
   return (
     <img
       className={clsx(candleFlame, !isLit && blowOut)}

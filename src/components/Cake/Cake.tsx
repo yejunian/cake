@@ -1,19 +1,15 @@
-import { useState } from 'react';
+import { useCandleStore } from '@/stores/candle.store';
 
 import { cake } from './Cake.css';
 import CakeBody from './CakeBody';
 import CandleContainer from './CandleContainer';
 
 function Cake() {
-  const [isCandleLit, setIsCandleLit] = useState(true);
-
-  const handleClick = () => {
-    setIsCandleLit((prev) => !prev);
-  };
+  const { toggleIsLit } = useCandleStore();
 
   return (
-    <div className={cake} onClick={handleClick}>
-      <CandleContainer isCandleLit={isCandleLit} />
+    <div className={cake} onClick={toggleIsLit}>
+      <CandleContainer />
 
       <CakeBody />
     </div>
