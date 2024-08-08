@@ -1,9 +1,9 @@
+import Candle from '@/components/Candle/Candle';
 import { useCandleStore } from '@/stores/candle.store';
 
-import Candle from './Candle/Candle';
-import { candles } from './CandleContainer.css';
+import { candles } from './CakeCandles.css';
 
-function CandleContainer() {
+function CakeCandles() {
   const { candleNumber } = useCandleStore();
 
   return (
@@ -15,4 +15,4 @@ function CandleContainer() {
   );
 }
 
-export default CandleContainer;
+export default CakeCandles;

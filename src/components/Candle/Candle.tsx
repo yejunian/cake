@@ -1,6 +1,6 @@
 import { candle } from './Candle.css';
-import CandleBody from './CandleBody';
-import CandleFlame from './CandleFlame';
+import CandleBody from './CandleBody/CandleBody';
+import CandleFlame from './CandleFlame/CandleFlame';
 
 function Candle() {
   return (
