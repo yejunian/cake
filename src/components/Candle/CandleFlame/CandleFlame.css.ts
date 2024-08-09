@@ -1,11 +1,14 @@
 import { style } from '@vanilla-extract/css';
 
 export const candleFlame = style({
-  display: 'block',
+  position: 'absolute',
+  zIndex: '10',
+  top: 0,
+  left: '50%',
+  transform: 'translate(-50%, -80%)',
   width: '100%',
 
-  position: 'relative',
-  zIndex: '10',
+  display: 'block',
 
   transition: `
     transform 0.36s ease-out,
@@ -14,6 +17,6 @@ export const candleFlame = style({
 });
 
 export const blowOut = style({
-  transform: 'skewX(45deg) translateX(-50%)',
+  transform: 'skewX(-45deg) translate(-100%, -90%)',
   opacity: '0',
 });
